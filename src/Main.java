@@ -1,6 +1,10 @@
+import Circle.Circle;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        Circle c = new Circle(4.0);
+        System.out.println(c);
     }
 }
