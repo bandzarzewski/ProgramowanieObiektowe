@@ -47,5 +47,7 @@ public class BookTest {
         Assert.assertEquals("Book[name=LotR Author[name= Jan,email=email@,gender=m] ,price=24,780000, qty=4]", book.toString());
     }
 
-
+    @Test
+    public void nothing() {
+    }
 }
