@@ -19,4 +19,30 @@ public class MyCircle {
         this._center = center;
     }
 
+    public int getCenterX() {
+        return _center.getX();
+    }
+
+    public void setCenterX(int x) {
+        _center.setX(x);
+    }
+
+    public int getCenterY() {
+        return _center.getY();
+    }
+
+    public void setCenterY(int y) {
+        _center.setY(y);
+    }
+
+    public int[] getCenterXY() {
+        return _center.getXY();
+    }
+
+    public void setCenterXY(int x, int y) {
+        _center.setXY(x, y);
+    }
+
 }
+
+
