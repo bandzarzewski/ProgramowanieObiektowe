@@ -1,5 +1,4 @@
 package BookAndAuthor;
-
 /**
  * Created by RENT on 2017-08-21.
  */
@@ -22,8 +21,8 @@ public class Author {
         return _email;
     }
 
-    public void setEmail(String _email) {
-        this._email = _email;
+    public void setEmail(String email) {
+        this._email = email;
     }
 
     public Character getGender() {
