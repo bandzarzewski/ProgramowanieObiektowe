@@ -5,17 +5,16 @@ package EnumDniMiesiaca;
  */
 public class DniMiesiaca {
     public enum DniMies {
-        STYCZEN(LUTY) {
-            public DniMiesiaca next() {
+        STYCZEN("LUTY") {
+            public DniMies next() {
                 return LUTY;
             }
         },
-        LUTY(STYCZEN) {
-            public DniMiesiaca next() {
+        LUTY("STYCZEN") {
+            public DniMies next() {
                 return STYCZEN;
             }
-        },
-        ;
+        };
 
         public final String name;
 
@@ -23,12 +22,12 @@ public class DniMiesiaca {
             this.name = name;
         }
 
-        public abstract DniMiesiaca next();
+        public abstract DniMies next();
     }
 
     public static void main(String[] args) {
         for (DniMies dnimiesiaca : DniMies.values()) {
-            System.out.printf("%s nastepny miesiac %s", dnimiesiaca, dnimiesiaca.next());
+            System.out.printf("%s nastepny miesiac %s \n", dnimiesiaca, dnimiesiaca.next());
         }
     }
 

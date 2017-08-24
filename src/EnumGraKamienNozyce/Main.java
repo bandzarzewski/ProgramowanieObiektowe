@@ -8,58 +8,101 @@ import java.util.Scanner;
  */
 
 public class Main {
+    public enum FiguraWGrze {KAMIEN, NOZYCE, PAPIER, Q}
 
-
-    public enum decisionEnum {KAMIEN, NOZYCE, PAPIER}
+    public enum StatusGry {REMIS, WYGRANA, PRZEGRANA}
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // System.out.println("Kamień-n Nożyce-n Papier-p Koniec-q");
+        // Tworzymy dwóch graczy i przypsiujemy wartości domyślne
+        FiguraWGrze user = FiguraWGrze.KAMIEN;
+        FiguraWGrze computer = FiguraWGrze.NOZYCE;
 
-        // podaje wartosci domyslne:
-        decisionEnum user = decisionEnum.KAMIEN;
-        decisionEnum computer = decisionEnum.NOZYCE;
 
-        while (true) {
+        // Licznik
+
+        int remis = 0;
+        int wygrana = 0;
+        int przegrana = 0;
+        int liczbaGier = 0;
+
+
+        while (!user.equals(FiguraWGrze.Q)) { // jesli gracz nie wybierze Q gra dalej
+
             System.out.println("Podaj swoj znak: ");
             String decision = sc.nextLine();
-            decisionEnum userDecision;
             switch (decision.toLowerCase()) {
                 case "n":
-                    userDecision = decisionEnum.NOZYCE;
-                    System.out.println("Wybrales Nozyce");
+                    user = FiguraWGrze.NOZYCE;
                     break;
                 case "k":
-                    userDecision = decisionEnum.KAMIEN;
+                    user = FiguraWGrze.KAMIEN;
                     break;
                 case "p":
-                    userDecision = decisionEnum.PAPIER;
+                    user = FiguraWGrze.PAPIER;
                     break;
+                case "q":
+                    user = FiguraWGrze.Q;
                 default:
                     continue;
             }
+
 
             Random random = new Random(); // losujemy wawrtosc losowa
-            decisionEnum computerDecison;
+
             switch (random.nextInt(3)) {
                 case 0:
-                    computerDecison = decisionEnum.KAMIEN;
-                    System.out.println("Komputer wybral Kamien ");
+                    computer = FiguraWGrze.KAMIEN;
+                    System.out.println("Komputer wybral Kamien \n");
                     break;
                 case 1:
-                    computerDecison = decisionEnum.NOZYCE;
-                    System.out.println("Komputer wybral Nozyce ");
+                    computer = FiguraWGrze.NOZYCE;
+                    System.out.println("Komputer wybral Nozyce \n");
                     break;
                 case 2:
-                    computerDecison = decisionEnum.PAPIER;
-                    System.out.println("Komputer wybral Papier");
+                    computer = FiguraWGrze.PAPIER;
+                    System.out.println("Komputer wybral Papier \n");
                     break;
-                default:
-                    continue;
+
             }
 
+            StatusGry result = wynikiGry(user, computer);
+            if (result.equals(StatusGry.REMIS))
+                remis++;
+            if (result.equals(StatusGry.PRZEGRANA))
+                przegrana++;
+            if (result.equals(StatusGry.WYGRANA))
+                wygrana++;
 
+            liczbaGier++;
         }
+        System.out.println("Liczba gier: " + liczbaGier + "\n Wygrana:" + wygrana + "\n Przegrana" + przegrana + "\n Remis" + remis);
     }
+
+    public static StatusGry wynikiGry(FiguraWGrze user, FiguraWGrze computer) {
+
+        if (user.equals(FiguraWGrze.KAMIEN) && computer.equals(FiguraWGrze.KAMIEN))
+            return StatusGry.REMIS;
+        if (user.equals(FiguraWGrze.KAMIEN) && computer.equals(FiguraWGrze.NOZYCE))
+            return StatusGry.WYGRANA;
+        if (user.equals(FiguraWGrze.KAMIEN) && computer.equals(FiguraWGrze.PAPIER))
+            return StatusGry.PRZEGRANA;
+        if (user.equals(FiguraWGrze.PAPIER) && computer.equals(FiguraWGrze.KAMIEN))
+            return StatusGry.WYGRANA;
+        if (user.equals(FiguraWGrze.PAPIER) && computer.equals(FiguraWGrze.PAPIER))
+            return StatusGry.REMIS;
+        if (user.equals(FiguraWGrze.PAPIER) && computer.equals(FiguraWGrze.NOZYCE))
+            return StatusGry.PRZEGRANA;
+        if (user.equals(FiguraWGrze.NOZYCE) && computer.equals(FiguraWGrze.KAMIEN))
+            return StatusGry.PRZEGRANA;
+        if (user.equals(FiguraWGrze.NOZYCE) && computer.equals(FiguraWGrze.PAPIER))
+            return StatusGry.WYGRANA;
+        if (user.equals(FiguraWGrze.NOZYCE) && computer.equals(FiguraWGrze.NOZYCE))
+            return StatusGry.REMIS;
+
+        return StatusGry.REMIS;
+
+    }
+
 }
