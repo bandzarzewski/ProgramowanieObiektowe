@@ -41,10 +41,10 @@ public class MyPoint {
     }
 
     public String toString() {
-        return String.format("(x%d,y%d)", _x, _y);
+        return String.format("(x=%d,y=%d)", _x, _y);
     }
 
-    private double calculatorDistance(int x, int y) {
+    public double calculatorDistance(int x, int y) {
         double pX = Math.pow((x - this._x), 2.0);
         double pY = Math.pow((y - this._y), 2.0);
         return Math.sqrt(pX + pY);
