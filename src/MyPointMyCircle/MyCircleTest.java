@@ -17,14 +17,18 @@ public class MyCircleTest {
     @Test
     public void MyCircleMyPointGetCenterTest() {
         MyCircle myCircle = new MyCircle();
-        Assert.assertEquals(new MyPoint(0, 0), myCircle.getCenter());
+        Assert.assertEquals(0, myCircle.getCenter().getX());
+        Assert.assertEquals(0, myCircle.getCenter().getY());
+
     }
 
     @Test
     public void MyCircleSetCenter() {
         MyCircle myCircle = new MyCircle();
         myCircle.setCenter(new MyPoint(1, 1));
-        Assert.assertEquals(new MyPoint(1, 1), myCircle.getCenter());
+        Assert.assertEquals(1, myCircle.getCenter().getX());
+        Assert.assertEquals(1, myCircle.getCenter().getY());
+
     }
 
     @Test
