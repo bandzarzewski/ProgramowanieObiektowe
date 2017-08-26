@@ -7,7 +7,7 @@ public class Main {
         System.out.println(circle.getRadius());
         Cylinder cylinder = new Cylinder();
         System.out.println(cylinder.getVolume());
-
+        System.out.println(cylinder.getColor());
     }
 
 }

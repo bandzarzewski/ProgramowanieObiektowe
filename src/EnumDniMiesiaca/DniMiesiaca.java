@@ -10,7 +10,57 @@ public class DniMiesiaca {
                 return LUTY;
             }
         },
-        LUTY("STYCZEN") {
+        LUTY("MARZEC") {
+            public DniMies next() {
+                return MARZEC;
+            }
+        },
+        MARZEC("KWIECIEN") {
+            public DniMies next() {
+                return KWIECIEN;
+            }
+        },
+        KWIECIEN("MAJ") {
+            public DniMies next() {
+                return MAJ;
+            }
+        },
+        MAJ("CZERWIEC") {
+            public DniMies next() {
+                return CZERWIEC;
+            }
+        },
+        CZERWIEC("LIPIEC") {
+            public DniMies next() {
+                return LIPIEC;
+            }
+        },
+        LIPIEC("SIERPIEN") {
+            public DniMies next() {
+                return SIERPIEN;
+            }
+        },
+        SIERPIEN("WRZESIEN") {
+            public DniMies next() {
+                return WRZESIEN;
+            }
+        },
+        WRZESIEN("PAZDZIERNIK") {
+            public DniMies next() {
+                return PAZDZIERNIK;
+            }
+        },
+        PAZDZIERNIK("LISTOPAD") {
+            public DniMies next() {
+                return LISTOPAD;
+            }
+        },
+        LISTOPAD("GRUDZIEN") {
+            public DniMies next() {
+                return GRUDZIEN;
+            }
+        },
+        GRUDZIEN("STYCZEN") {
             public DniMies next() {
                 return STYCZEN;
             }
