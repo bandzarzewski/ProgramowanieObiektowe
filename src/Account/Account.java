@@ -6,7 +6,11 @@ package Account;
 public class Account {
     private String id;
     private String name;
-    private int balance=0;
+    private int balance = 0;
+
+    public Account(int balance) {
+        this.balance = balance;
+    }
 
     public Account(String id, String name) {
         this.id = id;
@@ -30,27 +34,32 @@ public class Account {
     public int getBalance() {
         return balance;
     }
-    public int credit(int amount){
-        balance=balance+amount;
+
+    public int credit(int amount) {
+        balance = balance + amount;
         return balance;
     }
-    public int debit(int amount){
-        if(amount<=balance){
-            balance=balance-amount;
-        }else{
+
+    public int debit(int amount) {
+        if (amount <= balance) {
+            balance = balance - amount;
+        } else {
             System.out.println("Amount exceeded balance");
         }
         return balance;
     }
-    public int transferTo(int amount,Account another){
-        if(amount<=balance){
-            another.credit(amount);
-            balance=balance-amount;
-        }else{
+
+    public int transferTo(int amount, Account another) {
+        if (amount <= balance) {
+            another.balance = another.balance + amount;
+            balance = balance - amount;
+        } else {
             System.out.println("Amount exceeded balance");
-        }return balance;
+        }
+        return balance;
     }
-    public String toString(){
-        return "Account[id="+id+",name="+name+",balance="+balance+"]";
+
+    public String toString() {
+        return "Account[id=" + id + ",name=" + name + ",balance=" + balance + "]";
     }
 }
