@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Created by Maciek on 27.08.2017.
  */
 public class Main {
-    public enum Coin {HEADS, TAILS}
+    public enum Coin {HEADS, TAILS, Q}
 
     public enum StatusGry {TRAFILES, NIETRAFIES}
 
@@ -15,10 +15,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         // Początkowe wartości
-        Coin user; // = Coin.HEADS;
-        Coin computer; //  = Coin.TAILS;
+        Coin user = Coin.HEADS;
+        Coin computer = Coin.TAILS;
 
-        while (true) {
+        int wygrana = 0;
+        int przegrana = 0;
+        int liczbaGier = 0;
+
+
+        while (!user.equals(Coin.Q)) {
             // Losujemy
             System.out.println("Podaj swoj znak (h lub t): ");
             String decision = sc.nextLine();
@@ -42,21 +47,34 @@ public class Main {
             switch (decision.toLowerCase()) {
                 case "h":
                     user = Coin.HEADS;
+                    break;
                 case "t":
                     user = Coin.TAILS;
-
+                    break;
+                case "q":
+                    user = Coin.Q;
+                default:
                     continue;
 
             }
-//            System.out.println("Trafieś !" + StatusGry.TRAFILES);
-//            System.out.println("Pudło !" + StatusGry.NIETRAFIES);
 
+            StatusGry result = wynikiGry(user, computer);
+            if (result.equals(StatusGry.TRAFILES)) {
+                System.out.println("Trafiłeś !");
+                wygrana++;
+            } else {
+                System.out.println("Nie Trafiłeś");
+            }
+//            System.out.println();
+//            if (result.equals(StatusGry.NIETRAFIES)) ;
+//
+//            przegrana++;
 
-//            if (random.equals(decision)) {
-//                System.out.println("Brawo");
-//            }
+            liczbaGier++;
+
 
         }
+        System.out.println("Liczba wygranych: " + wygrana + " Liczba gier:" + liczbaGier);
     }
 
     public static StatusGry wynikiGry(Coin user, Coin computer) {

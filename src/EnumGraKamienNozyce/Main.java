@@ -28,8 +28,8 @@ public class Main {
         int liczbaGier = 0;
 
 
-        //while (!user.equals(FiguraWGrze.Q)) { // jesli gracz nie wybierze Q gra dalej
-        while (liczbaGier < 5) {
+        while (!user.equals(FiguraWGrze.Q)) { // jesli gracz nie wybierze Q gra dalej
+            //while (liczbaGier < 5) {
             System.out.println("Podaj swoj znak: ");
             String decision = sc.nextLine();
             switch (decision.toLowerCase()) {
