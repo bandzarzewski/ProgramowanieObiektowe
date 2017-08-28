@@ -14,5 +14,12 @@ public class Main {
             System.out.println(element);
         }
 
+        TablicaLiczb tablicaLiczb1 = new TablicaLiczb(new AlgorytmPrzezZliczanie());
+        int[] tabToSort1 = {3, 87, 2, 8, 9};
+        int[] sorted1 = tablicaLiczb.doSorting(tabToSort);
+        for (int element : sorted) {
+            System.out.println(element);
+        }
+
     }
 }
