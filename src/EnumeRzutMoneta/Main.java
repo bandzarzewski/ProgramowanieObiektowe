@@ -29,6 +29,7 @@ public class Main {
             switch (random.nextInt(2)) {
                 case 0:
                     computer = Coin.HEADS;
+
                     System.out.println("Computer wybrał HEADS");
 
                     break;
