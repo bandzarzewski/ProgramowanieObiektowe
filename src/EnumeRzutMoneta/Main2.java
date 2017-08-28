@@ -13,18 +13,19 @@ public class Main2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Wprowadz 0 dla Heads lub 1 dla Tails");
 
+        while (true) {
+            int userGuess = sc.nextInt();
+            //sc.close();
+            System.out.println("Rzut monetą ");
+            int coinSide = new Random().nextInt(2);
 
-        int userGuess = sc.nextInt();
-        sc.close();
-        System.out.println("Rzut monetą ");
-        int coinSide = new Random().nextInt(2);
-
-        if (coinSide == userGuess) {
-            System.out.println("Dobra robota, trafiłeś !");
-        } else if (coinSide == 0) {
-            System.out.println(" Przepraszam to jest Heads");
-        } else {
-            System.out.println("Przepraszam to jest Tails");
+            if (coinSide == userGuess) {
+                System.out.println("Dobra robota, trafiłeś !");
+            } else if (coinSide == 0) {
+                System.out.println(" Przepraszam to jest Heads");
+            } else {
+                System.out.println("Przepraszam to jest Tails");
+            }
         }
     }
 }

@@ -28,8 +28,8 @@ public class Main {
         int liczbaGier = 0;
 
 
-        while (!user.equals(FiguraWGrze.Q)) { // jesli gracz nie wybierze Q gra dalej
-
+        //while (!user.equals(FiguraWGrze.Q)) { // jesli gracz nie wybierze Q gra dalej
+        while (liczbaGier < 5) {
             System.out.println("Podaj swoj znak: ");
             String decision = sc.nextLine();
             switch (decision.toLowerCase()) {
@@ -69,15 +69,19 @@ public class Main {
 
             StatusGry result = wynikiGry(user, computer);
             if (result.equals(StatusGry.REMIS))
-                remis++;
+                System.out.println("Trafiłeś remis ! ");
+            remis++;
             if (result.equals(StatusGry.PRZEGRANA))
-                przegrana++;
+                System.out.println("Cholera przegrałeś ");
+            przegrana++;
             if (result.equals(StatusGry.WYGRANA))
-                wygrana++;
+                System.out.println("Wygrałeś niezle ");
+            System.out.println();
+            wygrana++;
 
             liczbaGier++;
         }
-        System.out.println("Liczba gier: " + liczbaGier + "\n Wygrana:" + wygrana + "\n Przegrana" + przegrana + "\n Remis" + remis);
+        System.out.println("Liczba gier: " + liczbaGier + "\n Wygrana: " + wygrana + "\n Przegrana: " + przegrana + "\n Remis:                                  " + remis);
     }
 
     public static StatusGry wynikiGry(FiguraWGrze user, FiguraWGrze computer) {
