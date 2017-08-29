@@ -17,6 +17,7 @@ public class Main {
         TablicaLiczb tablicaLiczb1 = new TablicaLiczb(new AlgorytmPrzezZliczanie());
         int[] tabToSort1 = {3, 87, 2, 8, 9};
         int[] sorted1 = tablicaLiczb.doSorting(tabToSort);
+        // tablicaLiczb1.setSortowanie(new AlgorytmBabelkowy());
         for (int element : sorted) {
             System.out.println(element);
         }

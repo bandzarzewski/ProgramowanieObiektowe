@@ -1,7 +1,13 @@
 package SymulatorSklepIntObliczaniePodatkuWStrategia;
 
-/**
- * Created by Maciek on 29.08.2017.
- */
 public interface IProdukty {
+
+
+    String getName();
+
+    double getPriceNetto();
+
+    String getNumber();
+
+
 }

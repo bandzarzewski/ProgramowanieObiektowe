@@ -18,11 +18,11 @@ public abstract class Kaczka {
     }
 
     public void wykonajKwakanie() {
-        kwakanie.kwak();
+        kwakanie.kwak(); // "kwakanie" to jest Interface a "kwak" to jest metoda
     }
 
-    public void setLatanie_1(ILatanie latanie_1) {
-        this.latanie_1 = latanie_1;
+    public void setLatanie_1(ILatanie latanie) {
+        this.latanie_1 = latanie;
     }
 
     public void setKwakanie(IKwakanie kwakanie) {

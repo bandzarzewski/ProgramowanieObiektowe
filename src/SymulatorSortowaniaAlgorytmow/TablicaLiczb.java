@@ -4,7 +4,7 @@ package SymulatorSortowaniaAlgorytmow;
  * Created by RENT on 2017-08-28.
  */
 public final class TablicaLiczb { // klasa finalna, po niej nic juz nie dziedziczy
-    protected ISortowanie _Sortowanie;
+    protected ISortowanie _Sortowanie; // interface
 
     // Konstruktor
     public TablicaLiczb(ISortowanie sortowanie) {

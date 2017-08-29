@@ -1,7 +1,11 @@
 package SymulatorSklepIntObliczaniePodatkuWStrategia;
 
-/**
- * Created by Maciek on 29.08.2017.
- */
-public class TaxUsa {
+
+public class TaxUsa implements ITax {
+
+    @Override
+    public double calculateBruttoPrice(double price) {
+        price = price * 15 / 100;
+        return price;
+    }
 }
