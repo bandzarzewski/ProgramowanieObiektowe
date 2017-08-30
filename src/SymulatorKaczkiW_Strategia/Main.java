@@ -1,8 +1,6 @@
-package SymulatorKaczki;
+package SymulatorKaczkiW_Strategia;
 
-/**
- * Created by RENT on 2017-08-28.
- */
+
 public class Main {
     public static void main(String[] args) {
 //        KaczkaPlaskonos kp = new KaczkaPlaskonos();
@@ -23,7 +21,7 @@ public class Main {
         km.print();
         km.wykonajKwakanie();
         // km.wykonajLatanie();
-        km.setLatanie_1(new NieLatam());
+        km.set_latanie(new NieLatam());
         km.wykonajLatanie();
 
     }

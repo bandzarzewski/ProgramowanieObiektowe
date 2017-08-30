@@ -1,4 +1,4 @@
-package SymulatorKaczki;
+package SymulatorKaczkiW_Strategia;
 
 /**
  * Created by RENT on 2017-08-28.

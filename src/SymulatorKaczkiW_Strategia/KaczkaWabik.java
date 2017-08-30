@@ -1,4 +1,4 @@
-package SymulatorKaczki;
+package SymulatorKaczkiW_Strategia;
 
 /**
  * Created by RENT on 2017-08-28.
@@ -6,7 +6,7 @@ package SymulatorKaczki;
 public class KaczkaWabik extends Kaczka {
 
     public KaczkaWabik() {
-        latanie_1 = new NieLatam();
+        _latanie = new NieLatam();
         kwakanie = new NieKwacz();
     }
 

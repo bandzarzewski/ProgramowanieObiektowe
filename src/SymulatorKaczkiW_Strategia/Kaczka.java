@@ -1,8 +1,7 @@
-package SymulatorKaczki;
-
+package SymulatorKaczkiW_Strategia;
 
 public abstract class Kaczka {
-    protected ILatanie latanie_1;
+    protected ILatanie _latanie;
     protected IKwakanie kwakanie;
 
     public void plywaj() {
@@ -14,15 +13,15 @@ public abstract class Kaczka {
     }
 
     public void wykonajLatanie() {
-        setLatanie_1(latanie_1);
+        set_latanie(_latanie);
     }
 
     public void wykonajKwakanie() {
         kwakanie.kwak(); // "kwakanie" to jest Interface a "kwak" to jest metoda
     }
 
-    public void setLatanie_1(ILatanie latanie) {
-        this.latanie_1 = latanie;
+    public void set_latanie(ILatanie latanie) {
+        this._latanie = latanie;
     }
 
     public void setKwakanie(IKwakanie kwakanie) {
