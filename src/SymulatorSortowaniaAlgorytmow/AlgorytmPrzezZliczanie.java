@@ -22,7 +22,6 @@ public class AlgorytmPrzezZliczanie implements ISortowanie {
                 max = tab[i];
             }
         }
-
         int[] counts = new int[max - min + 1];
 
         for (int i = 0; i < tab.length; i++) {
@@ -39,6 +38,5 @@ public class AlgorytmPrzezZliczanie implements ISortowanie {
         }
         tab = aux;
         return tab;
-
     }
 }

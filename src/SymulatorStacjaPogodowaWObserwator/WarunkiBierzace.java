@@ -1,18 +1,19 @@
-package SymulatorStacjaPogodowa;
+package SymulatorStacjaPogodowaWObserwator;
 
 public class WarunkiBierzace implements IWyswietl, IObserwator {
     private float _temp;
     private float _wilgotnosc;
     private float _pressure;
-    private IPodmiot DanePogodowe;
+    private IPodmiot _danePogodowe;
 
-    public WarunkiBierzace(){
-        DanePogodowe.zarejstrujObiekt(this);
+    public WarunkiBierzace(IPodmiot danePogodowe) {
+        _danePogodowe = danePogodowe;
+        _danePogodowe.zarejstrujObiekt(this); // this to wskaznik na samego siebie.
     }
 
     @Override
     public void wyswietl() {
-        System.out.printf("Aktualne dane: %f, stC, %f hTP, %f%%",_temp,_pressure,_wilgotnosc);
+        System.out.printf("Aktualne dane: %f stC, %f hPA, %f%%", _temp, _pressure, _wilgotnosc);
 
     }
 

@@ -1,4 +1,4 @@
-package SymulatorStacjaPogodowa;
+package SymulatorStacjaPogodowaWObserwator;
 
 import java.util.ArrayList;
 import java.util.List;
