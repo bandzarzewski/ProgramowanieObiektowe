@@ -19,14 +19,13 @@ public class DanePogodowe implements IPodmiot {
     }
 
     @Override
-    public void zarejestrujObserwatora
-            (IObserwator obserwator) {
-        obserwatorzy.add(obserwator);
+    public void zarejestrujObserwatora(IObserwator obserwator) {
+        obserwatorzy.add(obserwator); // dodajemy nowy element do listy
     }
 
     @Override
     public void usunObserwatora(IObserwator obserwator) {
-        obserwatorzy.remove(obserwator);
+        obserwatorzy.remove(obserwator); // usuwamy z listy 
     }
 
     @Override

@@ -19,9 +19,9 @@ public class WarunkiBiezace implements IWyswietl, IObserwator {
 
     @Override
     public void aktualizuj(float temp, float cisnienie, float wilgotnosc) {
-        _temp = temp;
-        _cisnienie = cisnienie;
-        _wilgotnosc = wilgotnosc;
+        this._temp = temp;
+        this._cisnienie = cisnienie;
+        this._wilgotnosc = wilgotnosc;
         wyswietl();
     }
 }
