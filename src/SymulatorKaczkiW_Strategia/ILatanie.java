@@ -1,4 +1,4 @@
-package SymulatorKaczki;
+package SymulatorKaczkiW_Strategia;
 
 
 public interface ILatanie {

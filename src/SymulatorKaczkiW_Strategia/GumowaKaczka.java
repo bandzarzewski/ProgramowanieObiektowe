@@ -1,9 +1,9 @@
-package SymulatorKaczki;
+package SymulatorKaczkiW_Strategia;
 
 
 public class GumowaKaczka extends Kaczka {
     public GumowaKaczka() {
-        latanie_1 = new NieLatam();
+        _latanie = new NieLatam();
         kwakanie = new Piszcz();
     }
 

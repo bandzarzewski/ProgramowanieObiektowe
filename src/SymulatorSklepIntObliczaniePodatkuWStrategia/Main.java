@@ -8,17 +8,24 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
+        // Dodajemu do listy cztery produkty.
         ArrayList<IProdukty> products = new ArrayList<>();
         products.add(new Produkt1());
         products.add(new Produkt1());
         products.add(new Produkt3());
 
+        // Tworzymy nowe obiekty podatek.
         ITax plTax = new TaxPol();
         ITax czTax = new TaxCzech();
         ITax usaTax = new TaxUsa();
         ITax gerTax = new TaxGer();
 
-        Klient calc = new Klient(plTax, products);
+
+        KlientCalculate calc = new KlientCalculate(plTax, products);
+
+        calc.showNettoAndBruttoPrice();
+        calc.setITax(usaTax);
+        calc.showNettoAndBruttoPrice();
 
     }
 }

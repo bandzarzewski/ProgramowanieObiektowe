@@ -1,11 +1,11 @@
-package SymulatorKaczki;
+package SymulatorKaczkiW_Strategia;
 
 /**
  * Created by RENT on 2017-08-28.
  */
 public class KaczkaModel extends Kaczka {
     public KaczkaModel() {
-        latanie_1 = new LatamZNapedemOdrzutowym();
+        _latanie = new LatamZNapedemOdrzutowym();
         kwakanie = new NieKwacz();
 
     }

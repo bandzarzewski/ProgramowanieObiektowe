@@ -1,4 +1,4 @@
-package SymulatorKaczki;
+package SymulatorKaczkiW_Strategia;
 
 /**
  * Created by RENT on 2017-08-28.
@@ -6,7 +6,7 @@ package SymulatorKaczki;
 public class KaczkaPlaskonos extends Kaczka {
     // Konstruktor
     public KaczkaPlaskonos() {
-        latanie_1 = new LatamBoMamSkrzydła();
+        _latanie = new LatamBoMamSkrzydła();
         kwakanie = new Kwacz();
     }
 

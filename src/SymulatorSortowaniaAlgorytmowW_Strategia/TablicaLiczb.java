@@ -1,8 +1,6 @@
-package SymulatorSortowaniaAlgorytmow;
+package SymulatorSortowaniaAlgorytmowW_Strategia;
 
-/**
- * Created by RENT on 2017-08-28.
- */
+
 public final class TablicaLiczb { // klasa finalna, po niej nic juz nie dziedziczy
     protected ISortowanie _Sortowanie; // interface
 
@@ -17,6 +15,7 @@ public final class TablicaLiczb { // klasa finalna, po niej nic juz nie dziedzic
 
     public int[] doSorting(int[] toSort) {
         return _Sortowanie.sortowanieTab(toSort);
+        // [nazwaInterface].[metodaWInterface]
     }
 
 
