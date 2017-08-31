@@ -38,7 +38,7 @@ public class Totolotek implements IObserwowany {
             double x = (Math.random() * 47 - 10);// Math.random() generator liczb losowych
             for (int j = 0; j < 6; j++) {
                 if (wyniki[j] == (int) x) {
-                    powtorka == true;
+                    powtorka = true;
                 }
             }
             if (powtorka == false) {

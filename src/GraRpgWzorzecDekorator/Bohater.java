@@ -16,6 +16,11 @@ public class Bohater {
         this._tarcza = tarcza;
     }
 
+    public String printAll() {
+        System.out.printf("%s %s", _imie, _tarcza);
+        return "";
+    }
+
     public Tarcza getTarcza() {
         return _tarcza;
     }
