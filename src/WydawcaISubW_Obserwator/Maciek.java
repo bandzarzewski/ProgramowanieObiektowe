@@ -1,6 +1,6 @@
 package WydawcaISubW_Obserwator;
 
-// Obserwator który obserwuje gazete
+// IObserwator który obserwuje gazete
 
 public class Maciek implements IOdbiorca {
     private IWydawca _gazeta;
