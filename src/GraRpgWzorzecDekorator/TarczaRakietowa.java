@@ -1,7 +1,13 @@
 package GraRpgWzorzecDekorator;
 
-/**
- * Created by Maciek on 30.08.2017.
- */
-public class TarczaRakietowa {
+public class TarczaRakietowa extends Tarcza {
+
+    public TarczaRakietowa() {
+        opis = "TarczaRakietowa";
+    }
+
+    @Override
+    public int obrona() {
+        return 40;
+    }
 }

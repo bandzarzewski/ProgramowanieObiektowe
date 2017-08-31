@@ -1,7 +1,13 @@
 package GraRpgWzorzecDekorator;
 
-/**
- * Created by Maciek on 30.08.2017.
- */
-public class TarczaLateksowa {
+public class TarczaLateksowa extends Tarcza {
+
+    public TarczaLateksowa() {
+        opis = "TarczaLateksowa";
+    }
+
+    @Override
+    public int obrona() {
+        return 30;
+    }
 }

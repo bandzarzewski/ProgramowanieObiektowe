@@ -1,9 +1,9 @@
-package WydawcaISub;
+package WydawcaISubW_Obserwator;
 
 
 import java.util.ArrayList;
 
-public class KaczorDonald implements IWydyawca {
+public class KaczorDonald implements IWydawca {
     private ArrayList<IOdbiorca> _odbiorcy;
     private String _numer;
 

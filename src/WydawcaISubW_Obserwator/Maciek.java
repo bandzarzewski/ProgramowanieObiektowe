@@ -1,10 +1,11 @@
-package WydawcaISub;
+package WydawcaISubW_Obserwator;
 
+// Obserwator który obserwuje gazete
 
 public class Maciek implements IOdbiorca {
-    private IWydyawca _gazeta;
+    private IWydawca _gazeta;
 
-    public Maciek(IWydyawca gazeta) {
+    public Maciek(IWydawca gazeta) {
         zaprenumerujGazete(gazeta);
     }
 
@@ -17,7 +18,7 @@ public class Maciek implements IOdbiorca {
         _gazeta.usunPrenumeratora(this);
     }
 
-    public void zaprenumerujGazete(IWydyawca gazeta) {
+    public void zaprenumerujGazete(IWydawca gazeta) {
         _gazeta = gazeta;
         _gazeta.dodajPrenumeratora(this);
 

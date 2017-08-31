@@ -1,8 +1,7 @@
 package WzorzecObserwatorAmbulans;
 
-/**
- * Created by RENT on 2017-08-29.
- */
+// To jest Odbiorca
 
-public interface CentrumZgloszen {
+public interface ICentrumZgloszen {
+    void aktualizacja(String numerZglosznie);
 }

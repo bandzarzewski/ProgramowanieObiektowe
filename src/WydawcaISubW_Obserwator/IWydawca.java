@@ -1,6 +1,6 @@
 package WydawcaISubW_Obserwator;
 
-public interface IWydyawca {
+public interface IWydawca {
     void dodajPrenumeratora(IOdbiorca prenumerator);
 
     void usunPrenumeratora(IOdbiorca prenumerator);

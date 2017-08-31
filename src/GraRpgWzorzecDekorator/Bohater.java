@@ -1,11 +1,32 @@
 package GraRpgWzorzecDekorator;
 
 public class Bohater {
-    // 4 pola:
-    // tu mamy wykorzystac agragacje
-    String imie;
-    Tarcza tarcza;
-//    Miecz miecz;
-//    Plecak plecak;
+
+    //Miecz miecz;
+    //Plecak plecak;
+
+    private String _imie;
+    private Tarcza _tarcza;
+
+    public Bohater() {
+    }
+
+    public Bohater(String _imie, Tarcza tarcza) {
+        this._imie = _imie;
+        this._tarcza = tarcza;
+    }
+
+    public Tarcza getTarcza() {
+        return _tarcza;
+    }
+
+    public void setImie(String imie) {
+        this._imie = imie;
+    }
+
+    public String getImie() {
+        return _imie;
+    }
+
 
 }

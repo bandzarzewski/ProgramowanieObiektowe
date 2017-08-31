@@ -1,7 +1,13 @@
 package WzorzecObserwatorAmbulans;
 
-/**
- * Created by RENT on 2017-08-29.
- */
-public interface Operator {
+// Nadawca
+
+public interface IOperator {
+
+    void zarejstrujZgloszenie(ICentrumZgloszen zgloszenie);
+
+    void usunZgloszenie(ICentrumZgloszen zgloszenie);
+
+    void wyslijInfOZgloszeniu();
+
 }

@@ -1,4 +1,4 @@
-package WydawcaISub;
+package WydawcaISubW_Obserwator;
 
 
 public class Main {

@@ -1,9 +1,9 @@
-package WydawcaISub;
+package WydawcaISubW_Obserwator;
 
 import java.util.ArrayList;
 
 
-public class GazetaFakt implements IWydyawca {
+public class GazetaFakt implements IWydawca {
     private ArrayList<IOdbiorca> _odbiorcy;
     private String _numer;
 
