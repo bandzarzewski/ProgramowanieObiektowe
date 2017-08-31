@@ -1,5 +1,6 @@
 package GraRpgWzorzecDekorator;
 
+// musze mieć metode ktora wydrukuje toStringa
 
 public abstract class Tarcza {
     protected String opis;
