@@ -6,7 +6,7 @@ public class Main {
         CzystySpiryt czystySpiryt = new CzystySpiryt();
         CzystaWoda czystaWoda = new CzystaWoda(czystySpiryt);
 
-        System.out.printf("Nazwa: %s :: Alkohol: %d \n", czystaWoda.pobierzOpis(), czystaWoda.alkohol());
+        System.out.printf("Nazwa: %s :: Alkohol:  %d \n", czystaWoda.pobierzOpis(), czystaWoda.alkohol());
 
     }
 }
