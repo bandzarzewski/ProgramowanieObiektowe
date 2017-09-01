@@ -2,9 +2,7 @@ package Adapter;
 
 import java.util.ArrayList;
 
-/**
- * Created by RENT on 2017-08-31.
- */
+
 public class Main {
     public static void main(String[] args) {
         DzikaKaczka kaczka = new DzikaKaczka();
