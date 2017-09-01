@@ -1,4 +1,4 @@
-package WzorzecDekoratorKawiarnia;
+package KawiarniaWzorzecDekorator;
 
 
 public class Main {
@@ -12,6 +12,6 @@ public class Main {
         Czekolada czekolada1 = new Czekolada(mleko);
         System.out.printf("Nazwa: %s :: Cena: %.2f \n", czekolada1.pobierzOpis(), czekolada1.koszt());
 
-        
+
     }
 }

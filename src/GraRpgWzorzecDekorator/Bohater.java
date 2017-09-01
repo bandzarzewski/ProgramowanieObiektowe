@@ -2,18 +2,20 @@ package GraRpgWzorzecDekorator;
 
 public class Bohater {
 
-    //Miecz miecz;
-    //Plecak plecak;
 
-    private String _imie;
+    Zasobnik _zasobnik;
+    Miecz _miecz;
+    private String _imie; // = "Rycerz bez głowy";
     private Tarcza _tarcza;
 
     public Bohater() {
     }
 
-    public Bohater(String _imie, Tarcza tarcza) {
+    public Bohater(String _imie, Tarcza tarcza, Miecz miecz, Zasobnik zasobnik) {
         this._imie = _imie;
         this._tarcza = tarcza;
+        this._miecz = miecz;
+        this._zasobnik = zasobnik;
     }
 
     public String printAll() {

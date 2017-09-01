@@ -1,7 +1,7 @@
 package GraRpgWzorzecDekorator;
 
 
-public abstract class Tarcza {
+public abstract class Miecz {
     protected String opis;
 
     public String pobierzOpis() {
@@ -9,5 +9,4 @@ public abstract class Tarcza {
     }
 
     public abstract int obrona();
-
 }

@@ -1,4 +1,4 @@
-package WzorzecDekoratorKawiarnia;
+package KawiarniaWzorzecDekorator;
 
 public class StarCafeSpecial extends Napoj {
     public void StarCafeSpecial() {
