@@ -13,4 +13,9 @@ public class SokMalinowy extends NalewkaDekorator {
     public String pobierzOpis() {
         return _nalewka.pobierzOpis() + "Sok Malinowy";
     }
+
+    @Override
+    public int alkohol() {
+        return 0;
+    }
 }

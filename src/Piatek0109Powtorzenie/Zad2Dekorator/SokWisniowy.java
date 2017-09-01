@@ -13,4 +13,9 @@ public class SokWisniowy extends NalewkaDekorator {
     public String pobierzOpis() {
         return _nalewka.pobierzOpis() + "Sok Wisniowy";
     }
+
+    @Override
+    public int alkohol() {
+        return 0;
+    }
 }

@@ -13,4 +13,9 @@ public class SokArganiowy extends NalewkaDekorator {
     public String pobierzOpis() {
         return _nalewka.pobierzOpis() + "Sok Arganowy";
     }
+
+    @Override
+    public int alkohol() {
+        return 0;
+    }
 }
