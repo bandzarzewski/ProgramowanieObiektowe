@@ -1,8 +1,6 @@
 package SymulatorSortowaniaAlgorytmowW_Strategia;
 
-/**
- * Created by RENT on 2017-08-28.
- */
+
 public class AlgorytmBabelkowy implements ISortowanie {
 
 
@@ -17,7 +15,6 @@ public class AlgorytmBabelkowy implements ISortowanie {
                     tab[i] = tab[j];
                     tab[j] = temp;
                 }
-
             }
         }
         return tab;

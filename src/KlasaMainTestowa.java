@@ -1,16 +1,16 @@
-import java.util.Random;
-
-/**
- * Created by RENT on 2017-08-31.
- */
 public class KlasaMainTestowa {
     public static void main(String[] args) {
-        Random random = new Random();
-        double[] analogSignal = random.doubles(8, 0.0, 2.0).toArray();
 
-        for (int i = 0; i < analogSignal.length; i++) {
-            System.out.println(analogSignal[i]);
+        int[] tablica = {4, 5, 8, 2, 3, 9, 13, 16};
+        //int[] tablica2 = new int[10];
+        for (int i = 0; i < tablica.length; i++) {
+            if (tablica[i] % 2 == 0) {
+                //tablica2[i] = tablica[i];
+                System.out.println(tablica[i]);
+            }
+
         }
-
     }
+
+//   s
 }

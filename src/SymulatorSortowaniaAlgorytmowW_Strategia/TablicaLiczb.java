@@ -15,6 +15,7 @@ public final class TablicaLiczb { // klasa finalna, po niej nic juz nie dziedzic
 
     public int[] doSorting(int[] toSort) {
         return _Sortowanie.sortowanieTab(toSort);
+
         // [nazwaInterface].[metodaWInterface]
     }
 
