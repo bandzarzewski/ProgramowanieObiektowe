@@ -1,8 +1,6 @@
 package SymulatorSortowaniaAlgorytmowW_Strategia;
 
-/**
- * Created by RENT on 2017-08-28.
- */
+
 public class AlgorytmPrzezZliczanie implements ISortowanie {
 
 
@@ -22,14 +20,15 @@ public class AlgorytmPrzezZliczanie implements ISortowanie {
                 max = tab[i];
             }
         }
-        int[] counts = new int[max - min + 1];
+        int[] counts = new int[max - min + 1]; // dlugosc tablicy
 
         for (int i = 0; i < tab.length; i++) {
             counts[tab[i] - min]++;
         }
 
         counts[0]--;
-        for (int i = 1; i < counts.length; i++) {
+        for (int i = 1; i < counts.length; i++) {   // Sumowanie : zaczynając
+            // od drugiego licznika sumujemy zawartość licznika oraz jego poprzednika
             counts[i] = counts[i] + counts[i - 1];
         }
 

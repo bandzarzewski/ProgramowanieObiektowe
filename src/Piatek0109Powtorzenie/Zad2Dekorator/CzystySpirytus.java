@@ -1,10 +1,10 @@
 package Piatek0109Powtorzenie.Zad2Dekorator;
 
 
-public class CzystySpiryt extends Nalewka {
+public class CzystySpirytus extends Nalewka {
 
-    CzystySpiryt() {
-        opis = "CzystySpiry ";
+    CzystySpirytus() {
+        opis = "CzystySpirytus ";
     }
 
     @Override
