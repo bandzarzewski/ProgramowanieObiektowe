@@ -2,9 +2,7 @@ package AnalogToDigitalAdapter;
 
 import java.util.Random;
 
-/**
- * Created by RENT on 2017-08-31.
- */
+
 public class RadioFM implements IAnalogSignal {
 
     // 1.Generujemy tablice(random) z zakresu 0:2;
@@ -12,25 +10,31 @@ public class RadioFM implements IAnalogSignal {
     // 3.Zamieniami to na bajty tzn.
 
 
-    Random random = new Random();
-    double[] analogSignal = random.doubles(8, 0.0, 2.0).toArray();
-
-    // Mamy dostep do tablicy
     public RadioFM(double[] analogSignal) {
-        this.analogSignal = analogSignal;
+        this._analogSignal = analogSignal;
     }
+
+    Random random = new Random();
+    private double[] _analogSignal = random.doubles(8, 0.0, 2.0).toArray();
+
 
     @Override
     public double[] getAnalog() {
-        return new double[0];
+        return _analogSignal;
     }
 
     @Override
-    public void setAnalog(double[] analogData) {
+    public void setAnalog(double[] analogSignal) {
+        this._analogSignal = analogSignal;
     }
 
     @Override
     public void printAnalog() {
+
+        for (Double aSignal : _analogSignal) {
+            System.out.printf("%f", aSignal);
+        }
+
 
     }
 }
