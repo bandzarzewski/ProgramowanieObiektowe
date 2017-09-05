@@ -1,7 +1,16 @@
-package SimpleThread_Watki;
-
-/**
- * Created by RENT on 2017-09-04.
- */
-public class Test {
-}
+//package SimpleThread_Watki;
+//
+//
+//public class Test {
+//
+//    public static void main(String[] args) {
+//
+//        IPrzyklad id = new IPrzyklad() {
+//            @Override
+//            public void TestInterface() {
+//
+//            }
+//        };
+//
+//    }
+//}
