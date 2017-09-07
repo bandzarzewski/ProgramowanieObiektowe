@@ -1,4 +1,4 @@
-package Kolekcje.Zad1;
+package Kolekcje;
 
 
 import java.util.ArrayDeque;

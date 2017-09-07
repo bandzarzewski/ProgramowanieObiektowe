@@ -1,4 +1,4 @@
-package UbraniaPoryRokuWzorzecFasada;
+package UbraniaPoryRoku_WzorzecFasada;
 
 public class FasadaLetniegoUbioru implements IUbranieNaKazdaPoreRoku {
 

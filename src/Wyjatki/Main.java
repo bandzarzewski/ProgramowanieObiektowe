@@ -1,4 +1,5 @@
-package Kolekcje;
+package Wyjatki;
+
 
 public class Main {
 }

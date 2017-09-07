@@ -1,4 +1,4 @@
-package WzorzecObserwatorLosowanieLotto;
+package LosowanieLotto_WzorzecObserwator;
 
 import java.util.ArrayList;
 

@@ -1,10 +1,11 @@
-package WzorzecObserwatorLosowanieLotto;
+package LosowanieLotto_WzorzecObserwator;
 
-public class Telewizja implements IObserwator, Media {
+
+public class Internet implements IObserwator, Media {
     private int[] wyniki;
     private Totolotek _lotek;
 
-    Telewizja(Totolotek lotek) {
+    Internet(Totolotek lotek) {
         wyniki = new int[6]; // tworzymy tablice 6 elementowa
         this._lotek = lotek;
     }
@@ -20,10 +21,12 @@ public class Telewizja implements IObserwator, Media {
     // metoda z klasy Media
     @Override
     public void informuj() {
-        System.out.println("Wyniki lotto w TV");
+        System.out.println();
+        System.out.println("Wyniki lotto w Internecie");
+
         for (int i : wyniki) {
             System.out.print(i + " ");
-            //System.out.println();
+            // System.out.println();
         }
 
     }

@@ -1,4 +1,4 @@
-package UbraniaPoryRokuWzorzecFasada;
+package UbraniaPoryRoku_WzorzecFasada;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package UbraniaPoryRokuWzorzecFasada;
+package UbraniaPoryRoku_WzorzecFasada;
 
 public class StrategiaUbioru {
     private IUbranieNaKazdaPoreRoku _ubranieNaPoreRoku;
