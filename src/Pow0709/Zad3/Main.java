@@ -27,38 +27,34 @@ public class Main {
         int liczba = sc.nextInt();
         int licznik = 0;
         int licznik2 = 0;
+        int max = 0;
+        int min = 0;
         for (int i = 0; i < liczba; i++) {
             int nowaLiczba = random.nextInt(201) - 100; // zakres od -100 do 100
             if (nowaLiczba > 0) {
                 licznik++;
                 System.out.println(nowaLiczba);
-            } else if (nowaLiczba < 0) {
+            }
+
+            if (nowaLiczba < 0) {
                 licznik2++;
                 System.out.println(nowaLiczba);
             }
+
+            if (nowaLiczba > max) {
+                max = nowaLiczba;
+            }
+
+            if (nowaLiczba < min) {
+                min = nowaLiczba;
+            }
+            
         }
         System.out.println("Liczba dodatnich czyfr : " + licznik);
         System.out.println("Liczba ujemnych czyfr : " + licznik2);
         double a = ((double) licznik / (double) licznik2);
         System.out.println("Stosunek liczb dodatnich do ujemnych:  " + a);
-
+        System.out.println("Min: " + min + " Max: " + max);
     }
 }
 
-
-//        try {
-//            System.out.println("Wprowadz liczbę z zakresu od -100 do 100 ");
-//
-//            if (liczba >= -100 && liczba <= 100) {
-//                liczba += liczba;
-//                System.out.println(liczba);
-//
-//
-//            } else if (liczba < -100 || liczba > 100) {
-//                throw new NumberFormatException();
-//            }
-//
-//        } catch (NumberFormatException ex) {
-//            System.out.println("Wprowadziłeś liczbe spoza zakresu ! ");
-//            sc.nextLine();
-//        }
