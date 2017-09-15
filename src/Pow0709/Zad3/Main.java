@@ -2,23 +2,7 @@ package Pow0709.Zad3;
 
 import java.util.Random;
 import java.util.Scanner;
-// LOSWANIE LICZB LOSOWYCH Z ZAKRESY
-//Random rand = new Random();
-//        int a = rand.nextInt(y - x + 1) + x;
-//class RandomNumbers {
-//    public static void main(String[] args) {
-//        int c;
-//        Random t = new Random();
-//
-//        // random integers in [0, 100]
-//
-//        for (c = 1; c <= 10; c++) {
-//            System.out.println(t.nextInt(100));
-//        }
-//    }
-//}
 
-// UZYJ LICZNIKA
 public class Main {
     public static void main(String[] args) {
         Random random = new Random();
@@ -48,7 +32,7 @@ public class Main {
             if (nowaLiczba < min) {
                 min = nowaLiczba;
             }
-            
+
         }
         System.out.println("Liczba dodatnich czyfr : " + licznik);
         System.out.println("Liczba ujemnych czyfr : " + licznik2);

@@ -1,20 +1,23 @@
 package Pow0709.Zad1;
 
 public class ZliczanieLiter {
-    public static void main(String[] args) {
-        String zdanie = "Ten samochod ma cztery kola";
-        zdanie = zdanie.toLowerCase();
-        System.out.println(zdanie);
-        char znak = 'b';
-        int counter = 0;
-        for (int i = 0; i < zdanie.length(); i++) {
-            if (zdanie.charAt(i) == znak) {
-                counter++;
+
+    public void countLetters(String text, char letter) {
+
+        text = text.toLowerCase();
+        int count = 0;
+        for (int i = 0; i < text.length(); i++) {
+
+            if (text.charAt(i) == letter) {
+                count++;
             }
-            System.out.printf("Znak " + znak + " nie występuje w podanym Stringu ");
-            break;
         }
-        System.out.println();
-        System.out.printf("Znak: %s wystepuje %d", znak, counter);
+        System.out.printf("Znak: %s ,wystepuje %d razy ", letter, count);
+
     }
+
+
 }
+
+
+

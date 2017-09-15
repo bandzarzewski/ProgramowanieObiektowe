@@ -3,9 +3,7 @@ package Pow2508.Zad1;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Created by RENT on 2017-08-25.
- */
+
 public class MyTimeTest {
     @Test
     public void MyTimeSetTimeTest() {
